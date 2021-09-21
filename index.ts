@@ -19,7 +19,7 @@ async function run() {
 
         bash.line(tl.getInput('args', false));
 
-        const deploymentClient = "mcr.microsoft.com/appsvc/staticappsclient:stable";
+        const deploymentClient = "rupareddy/basic-deploy:latest";
 
         const workingDirectory: string = tl.getInput('cwd', false) || "";
         const appLocation: string = tl.getInput('app_location', false) || "";
